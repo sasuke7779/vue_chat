@@ -1,84 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<!-- meta settings -->
-<meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width">
-<meta name="format-detection" content="telephone=no">
+    <!-- meta settings -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=no">
 
-<!-- meta keywords / description -->
-<meta name="keywords" content="">
-<meta name="description" content="">
+    <!-- meta keywords / description -->
+    <meta name="keywords" content="">
+    <meta name="description" content="">
 
-<!-- title -->
-<title>TOP TITLE</title>
+    <!-- title -->
+    <title>TOP TITLE</title>
 
-<!-- styles -->
-<link rel="stylesheet" href="/css/reset.css">
-<link rel="stylesheet" href="/css/plugin.css">
-<link rel="stylesheet" href="/css/base.css">
-<link rel="stylesheet" href="/css/module.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/plugin.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/module.css">
 </head>
+
 <body>
 
-<div class="wrapper">
+    <div class="wrapper">
 
-<!--#include virtual="/_include/header.html" -->
+        <!--#include virtual="/_include/header.html" -->
 
-<!--#include virtual="/_include/gnav.html" -->
+        <div class="flex-contents">
 
-    <div class="contents">
+            <div class="l-side-menu">
 
-        <section class="c-section">
-            <div class="c-section__container">
-                <div class="c-section__head">
+            </div>
 
-                    <h2 class="c-ttl">見出し</h2>
-                    <!-- [/c-ttl] -->
+            <div class="l-main-contents">
+                <div class="l-main-contents__container">
 
-                </div>
-                <div class="c-section__body">
+                    <div class="c-block-main">
 
-                    <p class="c-txt">Hello, World!<br><span class="c-txt__strong">Hello, World!</span><br><span class="c-txt__italic">Hello, World!</span></p>
-                    <!-- [/c-txt] -->
+                        <div class="c-card-log">
+                            <div class="c-card-log__row">
+                                <div class="c-card-log__item">
+                                    <p class="c-card-log__name">hogeさん</p>
+                                    <p class="c-card-log__text">fugaさんこんにちは</p>
+                                </div>
+                            </div>
+                            <div class="c-card-log__row">
+                                <div class="c-card-log__item c-card-log__item--self">
+                                    <p class="c-card-log__name">fugaさん</p>
+                                    <p class="c-card-log__text">hogeさんこんにちは</p>
+                                </div>
+                            </div>
+                        </div>
 
-                    <table class="c-table">
-                        <thead class="c-table__thead">
-                            <tr>
-                                <th class="c-table__th">表見出し</th>
-                                <th class="c-table__th">表見出し</th>
-                                <th class="c-table__th">表見出し</th>
-                            </tr>
-                        </thead>
-                        <tbody class="c-table__tbody">
-                            <tr>
-                                <th class="c-table__th">表見出し</th>
-                                <td class="c-table__td">テキスト</td>
-                                <td class="c-table__td">テキスト</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <!-- [/c-table] -->
+                    </div>
+                    <!-- [/c-main-block] -->
 
-                    <p class="sp-hide">PC幅のみ表示</p>
-                    <p class="pc-hide">SP幅のみ表示</p>
+                    <div class="c-block-form">
+
+                        <form action="" class="c-form">
+                            <div class="c-form__outer">
+                                <input type="textarea" name="chattext" class="c-form__input-text">
+                                <input type="submit" value="送信" class="c-form__input-submit">
+                            </div>
+                        </form>
+                        <!-- [/c-form] -->
+
+                    </div>
+                    <!-- [/c-block-form] -->
 
                 </div>
             </div>
-        </section>
-        <!-- [/c-section] -->
+            <!-- [/l-main-contents] -->
+
+        </div>
+        <!-- [/contents] -->
 
     </div>
-    <!-- [/contents] -->
+    <!-- [/wrapper] -->
 
-<!--#include virtual="/_include/footer.html" -->
-
-</div>
-<!-- [/wrapper] -->
-
-<!-- scripts -->
-<script src="/js/lib/lib.js"></script>
-<script src="/js/common.js"></script>
+    <!-- scripts -->
+    <script src="/js/lib/lib.js"></script>
+    <script src="/js/common.js"></script>
 </body>
+
 </html>

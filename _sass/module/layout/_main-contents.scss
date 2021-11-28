@@ -1,0 +1,14 @@
+/* ---------------------------------------------
+*   l-main-contents
+--------------------------------------------- */
+.l-main-contents {
+	$host: &;
+	width: 70%;
+	min-height: calc(100vh - 60px);
+
+	&__container {
+		padding: 20px;
+		height: 100%;
+		background-color: #eee;
+	}
+}

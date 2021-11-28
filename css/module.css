@@ -18,20 +18,14 @@ Contents:
 *
 ========================================================== */
 /* ---------------------------------------------
-*   breadcrumb
---------------------------------------------- */
-@media screen and (min-width: 751px) {
-    .breadcrumb__txt--link {
-        text-decoration: underline;
-    }
-    .breadcrumb__txt--link:hover {
-        text-decoration: none;
-    }
-}
-
-/* ---------------------------------------------
 *   contents
 --------------------------------------------- */
+.flex-contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
 /* ---------------------------------------------
 *   footer
 --------------------------------------------- */
@@ -76,15 +70,41 @@ Contents:
 /*  footer-copyright
 --------------------------------------------- */
 /* ---------------------------------------------
-*   global-nav
---------------------------------------------- */
-/* ---------------------------------------------
 *   header
 --------------------------------------------- */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 /*  header-container
 --------------------------------------------- */
+.header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    width: 100%;
+    height: 60px;
+    background-color: #42b983;
+
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
 /*  header-logo
 --------------------------------------------- */
+.header-logo__link {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+}
+
 @media screen and (min-width: 751px) {
     .header-logo__link {
         -webkit-transition: opacity 300ms;
@@ -110,44 +130,56 @@ Contents:
 /*  header-sp-trigger
 --------------------------------------------- */
 /* ---------------------------------------------
+*   l-main-contents
+--------------------------------------------- */
+.l-main-contents {
+    min-height: calc(100vh - 60px);
+    width: 70%;
+}
+
+.l-main-contents__container {
+    padding: 20px;
+    height: 100%;
+    background-color: #eee;
+}
+
+/* ---------------------------------------------
+*   l-side-menu
+--------------------------------------------- */
+.l-side-menu {
+    min-height: calc(100vh - 60px);
+    width: 30%;
+}
+
+/* ---------------------------------------------
 *   wrapper
 --------------------------------------------- */
+.wrapper {
+    padding-top: 60px;
+}
+
 /* ==========================================================
 *
 *   component
 *
 ========================================================== */
 /* ---------------------------------------------
-*   c-block
+*   c-block-main
 --------------------------------------------- */
-.c-block {
-    margin-bottom: 30px;
+.c-block-main {
+    padding: 10px;
+    width: 100%;
+    height: calc(100vh - 60px - 120px);
+    border: 1px solid #444;
+    background-color: #fff;
 }
 
-@media screen and (max-width: 750px) {
-    .c-block {
-        margin-bottom: 8vw;
-    }
-}
-
-.c-block__head {
-    margin-bottom: 15px;
-}
-
-@media screen and (max-width: 750px) {
-    .c-block__head {
-        margin-bottom: 4vw;
-    }
-}
-
-.c-block__body {
-    padding: 0 10px;
-}
-
-@media screen and (max-width: 750px) {
-    .c-block__body {
-        padding: 0;
-    }
+/* ---------------------------------------------
+*   c-block-form
+--------------------------------------------- */
+.c-block-form {
+    width: 100%;
+    height: 80px;
 }
 
 /* ---------------------------------------------
@@ -197,36 +229,56 @@ Contents:
 }
 
 /* ---------------------------------------------
-*   c-card
+*   c-card-log
 --------------------------------------------- */
-.c-card {
-    margin-bottom: 30px;
+.c-card-log__row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
 }
 
-@media screen and (max-width: 750px) {
-    .c-card {
-        margin-bottom: 8vw;
-    }
+.c-card-log__row:last-of-type {
+    border-bottom: none;
 }
 
-.c-card__head {
-    margin-bottom: 15px;
+.c-card-log__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    background-color: #cae3d6;
 }
 
-@media screen and (max-width: 750px) {
-    .c-card__head {
-        margin-bottom: 4vw;
-    }
+.c-card-log__item--self {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    background-color: #99debb;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
 }
 
-.c-card__body {
-    padding: 0 10px;
+.c-card-log__name {
+    display: inline-block;
+    margin-right: 20px;
+    padding-right: 20px;
+    min-width: 100px;
+    max-width: 150px;
+    border-right: 1px solid #000;
 }
 
-@media screen and (max-width: 750px) {
-    .c-card__body {
-        padding: 0;
-    }
+.c-card-log__item--self .c-card-log__name {
+    margin-right: 0;
+    margin-left: 20px;
+    padding-right: 0;
+    padding-left: 20px;
+    border-right: none;
+    border-left: 1px solid #000;
+}
+
+.c-card-log__text {
+    display: inline-block;
+    width: auto;
 }
 
 /* ---------------------------------------------
@@ -312,6 +364,27 @@ Contents:
 /* ---------------------------------------------
 *   c-form
 --------------------------------------------- */
+.c-form {
+    margin-top: 10px;
+}
+
+.c-form__outer {
+    width: 100%;
+    height: 50px;
+}
+
+.c-form__input-text {
+    width: 90%;
+    height: 100%;
+    background-color: #fff;
+}
+
+.c-form__input-submit {
+    width: 9%;
+    height: 100%;
+    background-color: #aaa;
+}
+
 /*  c-form-input-txt
 --------------------------------------------- */
 /*  c-form-input-pw
