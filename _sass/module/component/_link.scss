@@ -1,0 +1,8 @@
+/* ---------------------------------------------
+*   c-link
+--------------------------------------------- */
+.c-link {
+    @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+        @include hover-underline-none();
+    }
+}

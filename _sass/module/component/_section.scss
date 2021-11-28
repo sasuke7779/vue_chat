@@ -1,0 +1,31 @@
+/* ---------------------------------------------
+*   c-section
+--------------------------------------------- */
+.c-section {
+    margin-bottom: 30px;
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        margin-bottom: pxtovw(60, 'sp');
+    }
+
+    &__container {
+        width: $contents-width-pc * 1px;
+        margin: 0 auto;
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            width: percentage(600/750);
+        }
+    }
+
+    &__head {
+        margin-bottom: 15px;
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            margin-bottom: pxtovw(30, 'sp');
+        }
+    }
+
+    &__body {
+        padding: 0 10px;
+        @media screen and (max-width: #{$breakpoint-sp}px) {
+            padding: 0;
+        }
+    }
+}

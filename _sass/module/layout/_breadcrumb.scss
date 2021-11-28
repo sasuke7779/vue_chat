@@ -1,0 +1,20 @@
+/* ---------------------------------------------
+*   breadcrumb
+--------------------------------------------- */
+.breadcrumb {
+
+    &__list {
+    }
+
+    &__list-item {
+    }
+
+    &__txt {
+
+        &--link {
+            @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+                @include hover-underline-none;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+/* ---------------------------------------------
+*   header
+--------------------------------------------- */
+.header {
+    $host: &;
+}
+
+/*  header-container
+--------------------------------------------- */
+.header-container {
+    $host: &;
+}
+
+/*  header-logo
+--------------------------------------------- */
+.header-logo {
+    $host: &;
+
+    &__link {
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            @include hover-opacity();
+        }
+    }
+}
+
+
+/*  header-nav
+--------------------------------------------- */
+.header-nav {
+    $host: &;
+
+    &__list {
+    }
+
+    &__list-item {
+    }
+
+    &__link {
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            @include hover-opacity();
+        }
+    }
+}
+
+/*  header-sp-trigger
+--------------------------------------------- */
+.header-sp-trigger {
+    $host: &;
+
+    &__txt {
+    }
+}

@@ -1,0 +1,79 @@
+// ==========================================================
+// Name:
+//     _config.scss
+//
+// Description:
+//     サイト全体に共通するデザインとスタイルの設定を記述する
+//     このファイルに記述するコメントは、１行コメントの「//」を使用する
+//     「/* ~~ */」の複数行コメントは、CSSとして出力されるため使用しない
+//
+// Contents:
+//     design config
+//     media query
+// ==========================================================
+
+// ---------------------------------------------
+//   design config
+//----------------------------------------------
+
+//   design width
+//----------------------------------------------
+$design-width-pc: 1920;
+$design-width-tb: 900;
+$design-width-sp: 750;
+
+//   contents width
+//   contents side padding を除いた部分の幅
+//----------------------------------------------
+$contents-width-pc: 1200;
+// $contents-width-tb: 880;
+$contents-width-sp: 730;
+
+//   contents side padding
+//----------------------------------------------
+$contents-side-padding-pc: 10;
+$contents-side-padding-tb: 10;
+$contents-side-padding-sp: 10;
+
+//   min width
+//----------------------------------------------
+$minwidth-pc: $contents-width-pc;
+$minwidth-tb: $design-width-sp + 1;
+$minwidth-sp: 320;
+
+//   breakpoints
+//----------------------------------------------
+$breakpoint-pc: 1024;
+$breakpoint-tb: 768;
+$breakpoint-sp: 750;
+
+//   fixed header height
+//----------------------------------------------
+$fixed-header-height-pc: 0;
+$fixed-header-height-tb: 0;
+$fixed-header-height-sp: 0;
+
+//   color
+//----------------------------------------------
+$black1: #000;
+$white1: #fff;
+$theme1: #9b2019;//サイトテーマカラー
+
+//   line height
+//----------------------------------------------
+$line-height-pc: 1.5;
+$line-height-tb: 1.5;
+$line-height-sp: 1.5;
+
+//   font
+//----------------------------------------------
+$root-fz-pc: 16;
+$root-fz-tb: 32;
+$root-fz-sp: 32;
+$root-fc: $black1;
+$root-ff: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "meiryo", sans-serif;
+
+//   hover
+//----------------------------------------------
+$hover-opacity-ratio: 0.8;
+$hover-opacity-ms: 300;

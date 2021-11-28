@@ -1,0 +1,66 @@
+/* ---------------------------------------------
+*   footer
+--------------------------------------------- */
+.footer {
+    $host: &;
+}
+
+/*  footer-pagetop
+--------------------------------------------- */
+.footer-pagetop {
+    $host: &;
+
+    &__link {
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            @include hover-opacity();
+        }
+    }
+
+    &__link-txt {
+    }
+}
+
+/*  footer-container
+--------------------------------------------- */
+.footer-container {
+    $host: &;
+}
+
+/*  footer-nav
+--------------------------------------------- */
+.footer-nav {
+    $host: &;
+
+    &__list {
+    }
+
+    &__list-item {
+    }
+
+    &__link {
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            @include hover-opacity();
+        }
+    }
+}
+
+/*  footer-logo
+--------------------------------------------- */
+.footer-logo {
+    $host: &;
+
+    &__link {
+        @media screen and (min-width: #{$breakpoint-sp + 1}px) {
+            @include hover-opacity();
+        }
+    }
+}
+
+/*  footer-copyright
+--------------------------------------------- */
+.footer-copyright {
+    $host: &;
+
+    &__txt {
+    }
+}

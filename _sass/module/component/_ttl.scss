@@ -1,0 +1,10 @@
+/* ---------------------------------------------
+*   c-ttl
+--------------------------------------------- */
+.c-ttl {
+    font-size: pxtorem(32, 'pc');
+    font-weight: bold;
+    @media screen and (max-width: #{$breakpoint-sp}px) {
+        font-size: pxtorem(50, 'pc');
+    }
+}
